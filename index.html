@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강승구 | 프론트엔드 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">KANG SEUNGGU | Frontend Developer</div>
+        <nav>
+            <a href="#about">
+                < About />
+            </a>
+            <a href="#skills">
+                < Skills />
+            </a>
+            <a href="#projects">
+                < Projects />
+            </a>
+            <a href="#contact">
+                < Contact />
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>안녕하세요, 저는 강승구 입니다.</h1>
+            <p>11</p>
+            <p>22</p>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>ABOUT ME</h2>
+
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="images/my_profile.jpg" alt="프로필 사진"
+                            style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover;">
+                    </div>
+
+                    <div class="profile-details">
+                        <p>11</p>
+                        <p>22</p>
+                        <p>33</p>
+
+                        <ul class="contact-info">
+                            <li><span class="info-label">이름:</span> 강승구</li>
+                            <li><span class="info-label">생년월일:</span> 2002.12.01 </li>
+                            <li><span class="info-label">이메일:</span> gugusg@naver.com</li>
+                            <li><span class="info-label">학력:</span> 신구대학교 (컴퓨터소프트웨어)</li>
+                            <li><span class="info-label">블로그/포트폴리오:</span> <a href="https://github.com/seun9u"
+                                    target="_blank">기술 깃허브</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS & EXPERTISE</h2>
+
+            <div class="skills-container">
+                <p>11</p>
+                <p>22</p>
+                <p>33</p>
+                <p>44</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>FEATURED PROJECTS</h2>
+            <div class="project-container" style="justify-content: space-evenly;">
+
+                <div class="project-card">
+                    <h3>프로젝트 1: 🏨 숙소 예약 플랫폼, STAY</h3>
+                    <p>기술 스택 : Php, Mysql(phpMyAdmin), Apache</p>
+                    <p>주요 성과 : 예약 시스템 DB 설계 및 구축</p>
+                    <button class="open-modal-btn"
+                        data-images="./img/stay_main.png, ./img/stay_signup.png, ./img/stay_search.png, ./img/stay_detail1.png, ./img/stay_detail2.png">
+                        ➡️ 이미지 보기</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>프로젝트 2: ✈️ AI 기반 여행 계획 서비스, Travellink</h3>
+                    <p>기술 스택 : React, Python, Gemini API, Mysql, AWS</p>
+                    <p>주요 성과 : React 인터페이스 개발, AWS 배포</p>
+                    <button class="open-modal-btn"
+                        data-images="./img/tl_main.png, ./img/tl_login.png, ./img/tl_survey1.png, ./img/tl_survey2.png, ./img/tl_result1.png, ./img/tl_list1.png, ./img/tl_list2.png">
+                        ➡️ 이미지 보기</button>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+
+            <div class="modal-content">
+                <img class="modal-img" id="modalImage" src="" alt="Project Image">
+
+                <div class="modal-nav">
+                    <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                    <span id="imgCounter"></span> <button class="nav-btn next"
+                        onclick="changeImage(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p>함께 혁신적인 결과물을 만들고 싶습니다. 언제든지 연락 주세요!</p>
+            <div id="contact-info">
+                <a href="mailto:gugusg@naver.com">✉️ 이메일 보내기</a>
+                <a href="https://github.com/seun9u" target="_blank">🌐 GitHub 방문</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 강승구. All Rights Reserved. | Designed with 💙</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
