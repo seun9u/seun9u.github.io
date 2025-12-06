@@ -152,31 +152,47 @@ h2 {
     width: 100px;
 }
 
+/* 프로젝트 섹션 전체 중앙 정렬 */
+#projects {
+    text-align: center;
+    /* 제목(h2)을 가로 중앙에 둠 */
+}
+
+/* 2번째 줄: 카드들을 감싸는 박스 */
 .project-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* 카드들을 화면 가운데로 모음 */
     flex-wrap: wrap;
-    gap: 30px;
+    /* 화면이 좁으면 자동으로 줄바꿈 */
+    gap: 40px;
+    /* 카드 사이의 간격 */
     margin-top: 30px;
 }
 
+/* 개별 카드 스타일 */
 .project-card {
-    width: 300px;
+    width: 350px;
     background-color: #f4f7f6;
     padding: 20px;
     border-radius: 6px;
-    text-align: left;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    /* 마우스 올리면 살짝 떠오름 */
 }
 
 .project-card h3 {
     color: #4a6400;
     margin-top: 0;
+    font-size: 1.2rem;
+    /* 제목 크기 조정 */
 }
 
 .open-modal-btn {
@@ -187,7 +203,8 @@ h2 {
     font-size: 1rem;
     border-radius: 4px;
     transition: background 0.3s;
-    margin-top: 10px;
+    margin-top: auto; 
+    align-self: center; 
 }
 
 .open-modal-btn:hover {
@@ -328,19 +345,36 @@ footer {
     position: static;
     transform: none;
     margin: 0;
-    padding: 8px 15px;
-    background-color: #f0f0f0;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 10px;          
+    background-color: transparent; 
+    color: #ccc;            
+    font-size: 30px;        
+    font-weight: normal;    
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     transition: 0.2s;
+    line-height: 1;         
 }
 
 .nav-btn:hover {
-    background-color: #ddd;
+    background-color: transparent; 
+    color: #333;            
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ddd; 
+    border-radius: 50%;     
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #6b8e23; 
+    transform: scale(1.2);
 }
 
 #imgCounter {

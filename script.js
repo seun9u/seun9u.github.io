@@ -48,13 +48,27 @@ function changeImage(n) {
 
 function updateModalImage() {
     modalImg.src = currentImages[currentIndex];
+    imgCounter.innerHTML = ""; 
 
     if (currentImages.length > 1) {
-        imgCounter.innerText = `${currentIndex + 1} / ${currentImages.length}`;
         document.querySelector('.prev').style.display = 'block';
         document.querySelector('.next').style.display = 'block';
+
+        for (let i = 0; i < currentImages.length; i++) {
+            let dot = document.createElement("span");
+            dot.className = "dot";
+            
+            if (i === currentIndex) {
+                dot.classList.add("active");
+            }
+            dot.onclick = function() {
+                currentIndex = i;
+                updateModalImage();
+            };
+            imgCounter.appendChild(dot);
+        }
+
     } else {
-        imgCounter.innerText = "";
         document.querySelector('.prev').style.display = 'none';
         document.querySelector('.next').style.display = 'none';
     }
