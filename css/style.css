@@ -26,7 +26,7 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: 700;
-    color: #6b8e23;
+    color: #456325;
     white-space: nowrap;
 }
 
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6b8e23;
+    color: #456325;
 }
 
 main {
@@ -59,15 +59,15 @@ section {
 
 h2 {
     font-size: 2.5em;
-    color: #6b8e23;
+    color: #456325;
     margin-bottom: 30px;
-    border-bottom: 3px solid #6b8e23;
+    border-bottom: 3px solid #456325;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 #hero {
-    background-color: #f0f8e9;
+    background-color: #C5D6B6; 
     padding: 80px 20px;
     border-radius: 0;
     box-shadow: none;
@@ -77,12 +77,12 @@ h2 {
 #hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #2F4518; 
 }
 
 #hero p {
     font-size: 1.2em;
-    color: #7f8c8d;
+    color: #444; 
 }
 
 #about .container {
@@ -113,13 +113,13 @@ h2 {
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #e9f5d3;
+    border: 5px solid #C5D6B6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-details {
     flex-grow: 1;
-    background-color: #f0f8e9;
+    background-color: #C5D6B6;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -147,30 +147,23 @@ h2 {
 
 .contact-info .info-label {
     font-weight: bold;
-    color: #6b8e23;
+    color: #456325;
     display: inline-block;
     width: 100px;
 }
 
-/* 프로젝트 섹션 전체 중앙 정렬 */
 #projects {
     text-align: center;
-    /* 제목(h2)을 가로 중앙에 둠 */
 }
 
-/* 2번째 줄: 카드들을 감싸는 박스 */
 .project-container {
     display: flex;
     justify-content: center;
-    /* 카드들을 화면 가운데로 모음 */
     flex-wrap: wrap;
-    /* 화면이 좁으면 자동으로 줄바꿈 */
     gap: 40px;
-    /* 카드 사이의 간격 */
     margin-top: 30px;
 }
 
-/* 개별 카드 스타일 */
 .project-card {
     width: 350px;
     background-color: #f4f7f6;
@@ -185,14 +178,12 @@ h2 {
 
 .project-card:hover {
     transform: translateY(-5px);
-    /* 마우스 올리면 살짝 떠오름 */
 }
 
 .project-card h3 {
-    color: #4a6400;
+    color: #2F4518;
     margin-top: 0;
     font-size: 1.2rem;
-    /* 제목 크기 조정 */
 }
 
 .open-modal-btn {
@@ -215,7 +206,7 @@ h2 {
     display: inline-block;
     margin: 10px 15px;
     padding: 10px 20px;
-    background-color: #6b8e23;
+    background-color: #456325;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -223,7 +214,7 @@ h2 {
 }
 
 #contact-info a:hover {
-    background-color: #4a6400;
+    background-color: #2F4518;
 }
 
 footer {
@@ -373,7 +364,7 @@ footer {
 }
 
 .dot.active {
-    background-color: #6b8e23; 
+    background-color: #456325; 
     transform: scale(1.2);
 }
 
