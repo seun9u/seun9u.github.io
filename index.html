@@ -4,60 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강승구 | 포트폴리오</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <title>강승구 | Backend Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <div class="logo">KANG SEUNGGU | Frontend Developer</div>
+        <div class="logo">KANG SEUNGGU | Backend Developer</div>
         <nav>
-            <a href="#about">
-                < About >
-            </a>
-            <a href="#skills">
-                < Skills >
-            </a>
-            <a href="#projects">
-                < Projects >
-            </a>
-            <a href="#contact">
-                < Contact >
-            </a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>안녕하세요, 저는 강승구 입니다.</h1>
-            <p>11</p>
-            <p>22</p>
+            <div class="hero-content">
+                <h1>안정적인 서비스를 구축하는<br>백엔드 개발자, 강승구입니다.</h1>
+                <p>
+                    Python FastAPI와 AWS 클라우드 환경을 활용하여 <br>실제 서비스 가능한 수준의 아키텍처를 설계하고 배포한 경험이 있습니다.<br>
+                    사용자 경험을 고려한 API 설계와 시스템 안정성 확보에 집중합니다.
+                </p>
+            </div>
         </section>
 
         <section id="about">
             <div class="container">
-                <h2>ABOUT ME</h2>
-
+                <h2 class="section-title">ABOUT ME</h2>
                 <div class="profile-content">
                     <div class="profile-image">
-                        <img src="images/my_profile.jpg" alt="프로필 사진"
-                            style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover;">
+                        <img src="img/profile.jpg" alt="프로필 사진">
                     </div>
-
                     <div class="profile-details">
-                        <p>11</p>
-                        <p>22</p>
-                        <p>33</p>
-
                         <ul class="contact-info">
-                            <li><span class="info-label">이름:</span> 강승구</li>
-                            <li><span class="info-label">생년월일:</span> 2002.12.01 </li>
-                            <li><span class="info-label">이메일:</span> gugusg@naver.com</li>
-                            <li><span class="info-label">학력:</span> 신구대학교 (컴퓨터소프트웨어)</li>
-                            <li><span class="info-label">포트폴리오:</span> <a href="https://github.com/seun9u"
-                                    target="_blank">깃허브</a></li>
+                            <li><span class="info-label"><i class="fas fa-user"></i> 이름</span> 강승구</li>
+                            <li><span class="info-label"><i class="fas fa-calendar"></i> 생년월일</span> 2002.12.01</li>
+                            <li><span class="info-label"><i class="fas fa-graduation-cap"></i> 학력</span> 신구대학교
+                                (컴퓨터소프트웨어)</li>
+                            <li><span class="info-label"><i class="fas fa-envelope"></i> Email</span> gugusg@naver.com
+                            </li>
+                            <li><span class="info-label"><i class="fab fa-github"></i> GitHub</span> <a
+                                    href="https://github.com/seun9u" target="_blank">github.com/seun9u</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,74 +58,202 @@
         </section>
 
         <section id="skills">
-            <h2>SKILLS & EXPERTISE</h2>
+            <div class="container">
+                <h2 class="section-title">SKILLS</h2>
 
-            <div class="skills-container">
-                <p>11</p>
-                <p>22</p>
-                <p>33</p>
-                <p>44</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Backend & Language</h4>
+                        <div class="skills-list">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">SQLAlchemy</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-server"></i> Infrastructure & DevOps</h4>
+                        <div class="skills-list">
+                            <span class="tech-badge">AWS EC2</span>
+                            <span class="tech-badge">AWS RDS</span>
+                            <span class="tech-badge">AWS S3</span>
+                            <span class="tech-badge">Nginx</span>
+                            <span class="tech-badge">Gunicorn</span>
+                            <span class="tech-badge">Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-database"></i> Database & Tools</h4>
+                        <div class="skills-list">
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Git / GitHub</span>
+                            <span class="tech-badge">VSCode</span>
+                            <span class="tech-badge">Gemini API</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>PROJECTS</h2>
+            <div class="container">
+                <h2 class="section-title">MAIN PROJECT</h2>
 
-            <div class="project-container">
+                <div class="project-detail-card">
+                    <div class="project-header">
+                        <h3>✈️ TravelLink (AI 기반 여행 계획 서비스)</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/seun9u" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
 
-                <div class="project-card">
-                    <h3>프로젝트 1</h3>
-                    <h3>🏨 숙소 예약 플랫폼, STAY</h3>
-                    <p>기술 스택 : Php, Mysql(phpMyAdmin), Apache</p>
-                    <p>주요 성과 : 예약 시스템 DB 설계 및 구축</p>
-                    <button class="open-modal-btn"
-                        data-images="./img/stay_main.png, ./img/stay_signup.png, ./img/stay_search.png, ./img/stay_detail1.png, ./img/stay_detail2.png">
-                        ➡️ 이미지 보기
-                    </button>
+                    <p class="project-summary">
+                        구글 Gemini AI를 활용하여 사용자의 취향에 맞는 여행지를 추천하고, 상세 일정을 자동으로 생성해주는 맞춤형 여행 플래너 서비스입니다.
+                    </p>
+
+                    <table class="summary-table">
+                        <tbody>
+                            <tr>
+                                <th>개발 기간</th>
+                                <td>2024.03 - 2024.11 (약 9개월)</td>
+                            </tr>
+                            <tr>
+                                <th>개발 인원</th>
+                                <td>풀스택 4인 개발 (팀 프로젝트)</td>
+                            </tr>
+                            <tr>
+                                <th>담당 역할</th>
+                                <td>기획, DB 설계, 백엔드 API 개발, AWS 인프라 구축 및 배포</td>
+                            </tr>
+                            <tr>
+                                <th>Tech Stack</th>
+                                <td>
+                                    <strong>BE:</strong> Python, FastAPI, SQLAlchemy <br>
+                                    <strong>Infra:</strong> AWS (EC2, RDS, S3), Nginx, Gunicorn <br>
+                                    <strong>DB:</strong> MySQL
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="project-section">
+                        <h4>⚡ Service Logic Flow</h4>
+                        <p>
+                            단순 저장이 아닌, <strong>AI 응답 데이터를 가공하여 DB에 적재하는 비동기 프로세스</strong>를 구현했습니다.<br>
+                            외부 API(Gemini)의 응답 지연을 고려하여 타임아웃 예외 처리를 적용했습니다.
+                        </p>
+                        <div class="architecture-box" style="background: #fdfdfd;">
+                            <div style="text-align: center; padding: 30px; color: #444; font-weight: 500;">
+                                Client (설문 제출) <br>
+                                ⬇️ <br>
+                                <span style="color:#e67e22;">FastAPI Server (프롬프트 생성)</span> <br>
+                                ⬇️ ⬆️ <br>
+                                <span style="color:#3498db;">Google Gemini API (JSON 응답)</span> <br>
+                                ⬇️ <br>
+                                DB 저장 (Parsing & Save) <br>
+                                ⬇️ <br>
+                                Client (결과 반환)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Key Functions</h4>
+                        <ul class="feature-list">
+                            <li><strong>AI 여행 코스 생성:</strong> Gemini API 연동, 사용자 설문 데이터 기반 프롬프트 엔지니어링 및 JSON 파싱</li>
+                            <li><strong>안정적인 인증 시스템:</strong> 세션/쿠키 기반 로그인 구현 및 CORS 보안 정책 수립</li>
+                            <li><strong>동행 매칭 시스템:</strong> 타 사용자의 여행 타임라인 상세 조회 및 동행 참여 신청/수락 프로세스 구현</li>
+                            <li><strong>관리자 기능:</strong> 전체 사용자 권한 관리 및 1:1 문의사항(Q&A) 답변 처리 시스템 구축</li>
+                        </ul>
+                    </div>
+
+                    <div class="trouble-shooting-box">
+                        <h4>Trouble Shooting & Performance</h4>
+
+                        <div class="trouble-item">
+                            <span class="trouble-title">1. CORS 정책 위반 및 쿠키 공유 문제 해결</span>
+                            <p>
+                                <strong>문제:</strong> 프론트엔드(S3)와 백엔드(EC2)의 도메인이 달라 브라우저 보안 정책에 의해 쿠키가 차단되어 로그인이 유지되지
+                                않음.<br>
+                                <strong>해결:</strong> FastAPI 미들웨어에 S3 도메인을 <code>allow_origins</code>로 등록하고,
+                                <code>allow_credentials=True</code> 설정.
+                            </p>
+                        </div>
+
+                        <div class="trouble-item">
+                            <span class="trouble-title">2. Gunicorn Worker Timeout 및 메모리 최적화</span>
+                            <p>
+                                <strong>문제:</strong> AI 응답 지연으로 인한 Worker 강제 종료(SIGKILL) 및 EC2 프리티어 환경의 메모리 부족 현상
+                                발생.<br>
+                                <strong>해결:</strong> Gunicorn 실행 옵션에 <code>--timeout 120</code>을 추가하여 대기 시간을 확보하고, 리눅스
+                                Swap 메모리(1GB)를 설정하여 시스템 안정성 강화.
+                            </p>
+                        </div>
+
+                        <div class="trouble-item">
+                            <span class="trouble-title">3. AWS EC2 연결 타임아웃 (Security Group)</span>
+                            <p>
+                                <strong>문제:</strong> EC2 인스턴스를 생성하고 서버를 가동했으나, 외부 브라우저에서 접속 시 무한 로딩(Time out) 발생.<br>
+                                <strong>해결:</strong> AWS 보안 그룹(Security Group)의 인바운드 규칙(Inbound Rules)을 점검하여, 웹 서비스 포트인
+                                <code>HTTP(80)</code>와 SSH 접속을 위한 <code>22번</code> 포트를 <code>0.0.0.0/0</code>(전체 허용)으로
+                                개방하여 해결.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="open-modal-btn" data-images="./img/tl_main.png, ./img/tl_login.png, ./img/tl_survey1.png,
+                         ./img/tl_survey2.png, ./img/tl_result1.png, ./img/tl_list1.png, ./img/tl_list2.png">
+                            📸 프로젝트 스크린샷 보기
+                        </button>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <h3>프로젝트 2</h3>
-                    <h3>✈️ AI 기반 여행 계획 서비스, Travellink</h3>
-                    <p>기술 스택 : React, Python, Gemini API, Mysql, AWS</p>
-                    <p>주요 성과 : React 인터페이스 개발, AWS 배포</p>
-                    <button class="open-modal-btn"
-                        data-images="./img/tl_main.png, ./img/tl_login.png, ./img/tl_survey1.png, ./img/tl_survey2.png, ./img/tl_result1.png, ./img/tl_list1.png, ./img/tl_list2.png">
-                        ➡️ 이미지 보기
-                    </button>
+                <h2 class="section-title" style="margin-top: 60px;">SUB PROJECT</h2>
+                <div class="project-detail-card sub-project">
+                    <h3>🏨 STAY (숙소 예약 플랫폼)</h3>
+                    <p><strong>Stack:</strong> PHP, MySQL, Apache</p>
+                    <p>예약 시스템의 데이터베이스 관계(Relation)를 설계하고, PHP를 이용해 예약 중복 방지 로직을 구현하였습니다.</p>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="open-modal-btn" data-images="./img/stay_main.png, ./img/stay_signup.png, ./img/stay_search.png,
+                         ./img/stay_deatail1.png, ./img/stay_deatail2.png">
+                            📸 프로젝트 스크린샷 보기
+                        </button>
+                    </div>
                 </div>
 
             </div>
         </section>
-
-        <div id="imageModal" class="modal">
-            <span class="close">&times;</span>
-
-            <div class="modal-content">
-                <img class="modal-img" id="modalImage" src="" alt="Project Image">
-
-                <div class="modal-nav">
-                    <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
-                    <span id="imgCounter"></span> <button class="nav-btn next"
-                        onclick="changeImage(1)">&#10095;</button>
-                </div>
-            </div>
-        </div>
 
         <section id="contact">
             <h2>CONTACT</h2>
             <p>함께 혁신적인 결과물을 만들고 싶습니다. 언제든지 연락 주세요!</p>
             <div id="contact-info">
-                <a href="mailto:gugusg@naver.com">✉️ 이메일 보내기</a>
-                <a href="https://github.com/seun9u" target="_blank">🌐 GitHub 방문</a>
+                <a href="mailto:gugusg@naver.com"><i class="fas fa-envelope"></i> gugusg@naver.com</a>
+                <a href="https://github.com/seun9u" target="_blank"><i class="fab fa-github"></i> GitHub 방문</a>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2025 강승구. All Rights Reserved. | Designed with 💙</p>
+        <p>© 2025 Kang Seunggu. All Rights Reserved.</p>
     </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-img" id="modalImage" src="" alt="Project Image">
+            <div class="modal-nav">
+                <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                <span id="imgCounter"></span>
+                <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
