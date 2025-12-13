@@ -123,16 +123,23 @@ section {
 }
 
 .profile-image {
-    flex-shrink: 0;
-}
-
-.profile-image img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6; 
+    overflow: hidden; 
+}
+
+.profile-image img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .profile-details {
